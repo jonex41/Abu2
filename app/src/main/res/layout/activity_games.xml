@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbargame"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:title="Game"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextColor="@color/white" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:paddingLeft="3dp"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Love calculator"
+        android:textSize="18sp"
+        android:clickable="true"
+        android:textColor="@color/black"
+        android:id="@+id/love_calculator"
+        android:drawablePadding="20dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/love_image"/>
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:clickable="true"
+        android:background="@color/black2"
+        android:layout_marginBottom="10dp"
+        android:layout_height="0.5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Future calculator"
+            android:textSize="18sp"
+            android:clickable="true"
+            android:textColor="@color/black"
+            android:id="@+id/future_calculator"
+            android:drawablePadding="20dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/future_image"/>
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="45dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:background="@color/black2"
+            android:layout_marginBottom="10dp"
+            android:layout_height="0.5dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#43a047</color>
+    <color name="colorPrimaryDark">#2e7d32</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent2">#11ff4081</color>
+    <color name="greenu">#81c784</color>
+    <color name="white">#ffffff</color>
+    <color name="whiteee">#75ffffff</color>
+    <color name="whiteee2">#22ffffff</color>
+
+    <color name="black">#000000</color>
+    <color name="gray1">#8f000000</color>
+    <color name="backgroud">#69f0ae</color>
+    <color name="screendisp">#e8f5e9</color>
+    <color name="divider">#ff0000</color>
+    <color name="chatcolor">#4043a047</color>
+    <color name="chatcolor2">#2c43a047</color>
+    <color name="black2">#56000000</color>
+    <color name="black3">#0d000000</color>
+    <color name="greenchat">#66BB6A</color>
+    <color name="greenchat2">#A5D6A7</color>
+    <color name="greenchat3">#a981c784</color>
+    <color name="yellow">#a981c784</color>
+    <color name="transparent">#7fffffff</color>
+    <color name="transparent2">#ff000000</color>
+    <color name="transparent3">#75000000</color>
+    <color name="whiteTransparentHalf2">#5affffff</color>
+
+    <color name="whiteTransparentHalf">#00ffffff</color>
+
+    <color name="likeBtnGray">#747474</color>
+    <color name="likeBtnAccent">#F44336</color>
+
+
+    <color name="fragrance_title">#4c4c4c</color>
+    <color name="line">#D3D3D3</color>
+
+    <color name="fragranceColor">#FFFFFF</color>
+    <color name="colorLine">#D3D3D3</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>

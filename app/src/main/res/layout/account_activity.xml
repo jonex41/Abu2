@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbaraccount"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="Account"
+        app:titleTextColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pricacy"
+        android:clickable="true"
+        android:textColor="@color/black"
+        android:layout_marginBottom="15dp"
+        android:textSize="18dp"
+        />
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/black2"
+        android:layout_marginBottom="15dp"
+        android:layout_height="0.5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/security"
+        android:textColor="@color/black"
+        android:clickable="true"
+        android:layout_marginBottom="15dp"
+        android:textSize="18dp"
+        />
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/black2"
+        android:layout_marginBottom="15dp"
+        android:layout_height="0.5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:clickable="true"
+        android:text="@string/accountverifacation"
+        android:layout_marginBottom="15dp"
+        android:textSize="18dp"
+        />
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+
+        android:background="@color/black2"
+        android:layout_marginBottom="15dp"
+        android:layout_height="0.5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/accountinfoo"
+        android:clickable="true"
+        android:textColor="@color/black"
+        android:layout_marginBottom="15dp"
+        android:textSize="18dp"
+        />
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/black2"
+        android:layout_marginBottom="15dp"
+        android:layout_height="0.5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/deleteaccount"
+        android:clickable="true"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"
+        android:textSize="18dp"
+        />
+    </LinearLayout>
+
+</LinearLayout>

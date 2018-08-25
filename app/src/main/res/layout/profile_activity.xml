@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/coodinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarLayout"
+        android:layout_width="match_parent"
+        android:background="@color/whiteTransparentHalf"
+        android:layout_height="400dp"
+        android:fitsSystemWindows="true">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingStuffsw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:background="@color/whiteTransparentHalf"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleTextAppearance="@android:color/transparent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/imageview_profile11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/facebook_avatar"
+                    app:layout_collapseMode="parallax"/>
+<LinearLayout
+    android:id="@+id/layout_for_name_status"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center|bottom">
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/myusername"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+
+                    android:textAllCaps="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/myusername"/>
+                    <TextView
+                        android:layout_gravity="bottom|center"
+                        android:id="@+id/mystatus"
+                        android:layout_marginTop="10dp"
+                        android:textSize="14sp"
+                        android:maxLength="100"
+                        android:layout_marginBottom="20dp"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mystatus"/>
+
+</LinearLayout>
+
+                </FrameLayout>
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarpp"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                android:background="@color/chatcolor2"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>-->
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black3"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:weightSum="3"
+                android:background="@color/colorPrimary"
+
+                android:gravity="center"
+
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/followers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:text="Followers(160)"/>
+                <Button
+                    android:id="@+id/following"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:text="Following(200)"/>
+                <Button
+                    android:id="@+id/models"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:text="Models(12)"/>
+
+            </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:id="@+id/nuno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="bold|italic"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Things i like to do"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="20sp"/>
+
+
+                    <TextView
+                        android:id="@+id/whatilikemosthead"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="42dp"
+                        android:textStyle="bold"
+                        android:layout_below="@id/nuno"
+                        android:text="Favorite hobbies :"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/whatilikemostreal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/whatilikemosthead"
+                        android:text="I like playing football"
+                        android:layout_toRightOf="@id/whatilikemosthead"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/relationshiphead"
+                        android:layout_width="wrap_content"
+                        android:layout_below="@id/whatilikemosthead"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="34dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="20dp"
+                        android:text="Relationship status:"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/relationshipreal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/relationshiphead"
+                        android:text="Complicated"
+                        android:layout_toRightOf="@id/relationshiphead"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/foodhead"
+                        android:layout_width="wrap_content"
+                        android:layout_below="@id/relationshiphead"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="98dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="20dp"
+                        android:text="Best food :"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/foodreal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/foodhead"
+                        android:text="Pounded yam with egusi"
+                        android:layout_toRightOf="@id/foodhead"
+                        android:textSize="14sp"/>
+
+
+                    <TextView
+                        android:id="@+id/maleorfemalehead"
+                        android:layout_width="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_below="@id/foodreal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="20dp"
+                        android:text="What i like in man/woman :"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/maleorfemalereal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/maleorfemalehead"
+                        android:text="Tall and handSome"
+                        android:layout_toRightOf="@id/maleorfemalehead"
+                        android:textSize="14sp"/>
+
+
+                    <TextView
+                        android:id="@+id/nastylovehead"
+                        android:layout_width="wrap_content"
+                        android:layout_below="@id/maleorfemalehead"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="18dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="20dp"
+                        android:text="I love doing,but it nasty :"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/nastylovereal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/nastylovehead"
+                        android:text="picking my nose"
+
+                        android:layout_toRightOf="@id/nastylovehead"
+                        android:textSize="14sp"/>
+
+
+                    <TextView
+                        android:id="@+id/whoknowshead"
+                        android:layout_width="wrap_content"
+                        android:layout_below="@id/nastylovehead"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="18dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="20dp"
+                        android:text="Who knows you the best :"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/whoknowsreal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/whoknowshead"
+                        android:text="john Aguda"
+                        android:layout_toRightOf="@id/whoknowshead"
+                        android:textSize="14sp"/>
+
+
+                    <TextView
+                        android:id="@+id/moneyhead"
+                        android:layout_width="wrap_content"
+                        android:layout_below="@id/whoknowshead"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="22dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Unlimited love or money :"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/moneyreal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/moneyhead"
+                        android:text="both"
+                        android:layout_toRightOf="@id/moneyhead"
+                        android:textSize="14sp"/>
+
+
+                    <TextView
+                        android:id="@+id/apologizehead"
+                        android:layout_width="wrap_content"
+                        android:layout_below="@id/moneyhead"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Apologizes or permission:"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/apologizereal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/apologizehead"
+                        android:text="permission"
+                        android:layout_toRightOf="@id/apologizehead"
+                        android:textSize="14sp"/>
+
+
+                    <TextView
+                        android:id="@+id/musichead"
+                        android:layout_width="wrap_content"
+                        android:layout_below="@id/apologizereal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="80dp"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="18dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Type of music"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/musicreal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/musichead"
+                        android:text="permission"
+                        android:layout_toRightOf="@id/musichead"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/celebrityhead"
+                        android:layout_width="wrap_content"
+                        android:layout_below="@id/musichead"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="20dp"
+                        android:text="Most loved celebrity :"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/celebrityreal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/celebrityhead"
+                        android:text="permission"
+                        android:layout_toRightOf="@id/celebrityhead"
+                        android:textSize="14sp"/>
+
+
+
+                    <TextView
+                        android:id="@+id/habbithead"
+                        android:layout_width="wrap_content"
+                        android:layout_below="@id/celebrityhead"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="100dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="20dp"
+                        android:text="Worst habbit :"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/habbitreal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/habbithead"
+                        android:text="nil"
+                        android:layout_toRightOf="@id/habbithead"
+                        android:textSize="14sp"/>
+
+
+                    <TextView
+                        android:id="@+id/sporthead"
+                        android:layout_width="wrap_content"
+                        android:layout_below="@id/habbithead"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="60dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="20dp"
+                        android:text="Favorite sport :"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/sportreal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/sporthead"
+                        android:text="Football"
+                        android:layout_toRightOf="@id/sporthead"
+                        android:textSize="14sp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:background="@color/white"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/oop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="bold|italic"
+                        android:text="Things i hate to do"/>
+
+                    <TextView
+                        android:id="@+id/tasktodo"
+                        android:layout_width="wrap_content"
+                        android:layout_below="@id/oop"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="60dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="20dp"
+                        android:text="Chores i hate to do :"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/tasktodoreal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/tasktodo"
+                        android:text="washing"
+                        android:layout_toRightOf="@id/tasktodo"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/hateinopposte"
+                        android:layout_width="wrap_content"
+                        android:layout_below="@id/tasktodo"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="60dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="20dp"
+                        android:text="Things i hate in opposite sex :"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/hateinoppostereal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/hateinopposte"
+                        android:text="talking"
+                        android:layout_toRightOf="@id/hateinopposte"
+                        android:textSize="14sp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/uuop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp"
+                        android:text="Things am doing to achieve my goal"
+                        android:textStyle="bold|italic"/>
+
+                    <TextView
+                        android:id="@+id/things_havebeen_doing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/uuop"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:layout_marginBottom="30dp"
+                        android:text="I have been playing games and eating, but i know it bad sha"
+                        android:textStyle="bold|italic"
+
+                        />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+
+                    android:weightSum="2">
+
+
+                    <Button
+                        android:id="@+id/create_page"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       android:background="@drawable/coloraccent_rec"
+                        android:textColor="@color/white"
+                        android:textStyle="italic"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:visibility="gone"
+                        android:layout_margin="5dp"
+                        android:text="Update"/>
+
+                    <Button
+                        android:id="@+id/change_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:textColor="@color/white"
+                        android:padding="10dp"
+                        android:background="@drawable/coloraccent_rec"
+
+                        android:layout_weight="1"
+                        android:textStyle="italic"
+                        android:layout_margin="5dp"
+
+                        android:text="Change status"/>
+                </LinearLayout>
+
+            </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

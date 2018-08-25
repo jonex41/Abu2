@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/black2"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llk"/>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/llk"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:orientation="vertical"
+       android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/settings_action_name"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="18dp"
+    android:layout_marginTop="5sp"
+    android:textColor="@color/black"
+    android:text="@string/action_settings"/>
+
+        </LinearLayout>
+        <View
+            android:id="@+id/viewme"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:background="@color/colorPrimaryDark"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+           >
+
+
+            <Button
+                android:id="@+id/profilefragment"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/profile_action_name"
+                android:background="@color/white"
+                android:text="@string/profile"
+                android:textSize="10sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_weight="1"
+                />
+            <Button
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/group_action_name"
+                android:background="@color/white"
+                android:text="@string/new_groups"
+                android:id="@+id/btncreate_group"
+                android:textSize="10sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_weight="1"
+                />
+            <Button
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/web_action_name"
+                android:background="@color/white"
+                android:text="@string/abuweb"
+                android:textSize="10sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_weight="1"
+                />
+            <Button
+                android:id="@+id/settingsni"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/settings_action_name"
+                android:background="@color/white"
+                android:text="@string/action_settings"
+                android:textSize="10sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+           >
+
+
+            <Button
+                android:id="@+id/wifi_action_name"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/log_out_person"
+                android:background="@color/white"
+                android:text="Log out"
+                android:textSize="10sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_weight="1"
+                />
+            <Button
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/add_action_name"
+                android:background="@color/white"
+                android:text="@string/addfriend"
+                android:textSize="10sp"
+                android:id="@+id/addnew_friend"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_weight="1"
+                />
+            <Button
+                android:id="@+id/games_play"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/games_play"
+                android:background="@color/white"
+                android:text="@string/games_play"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                />
+            <Button
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/support_action_name"
+            android:background="@color/white"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/support"
+
+                android:textSize="10sp"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+        <View
+            android:id="@+id/viewm"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:layout_marginTop="45dp"
+            android:background="@color/colorPrimaryDark"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:background="@color/colorAccent">
+
+
+            <Button
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@color/white"
+                android:layout_gravity="bottom"
+                android:drawableTop="@drawable/settings_action_name"
+                android:text="@string/action_settings"
+                android:textSize="10sp" />
+
+            <ImageButton
+                android:id="@+id/fragmentclose"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:src="@drawable/ic_expand_more_black_24dp"
+android:layout_gravity="bottom"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/exitfinish"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:drawableTop="@drawable/exit_action_name"
+                android:text="@string/exit"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_gravity="bottom"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

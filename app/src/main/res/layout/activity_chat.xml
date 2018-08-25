@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:paddingBottom="3dp"
+
+    android:background="@color/screendisp">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarj"
+        android:layout_width="match_parent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimary"
+
+        app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="60dp">-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingTop="60dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerChat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="70dp"
+          />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_above="@+id/gll"
+
+            android:background="@color/chatcolor" />
+
+
+        <LinearLayout
+            android:id="@+id/gll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:gravity="center"
+            android:layout_marginBottom="8dp"
+            android:background="@color/screendisp"
+                android:layout_alignParentBottom="true"
+
+            android:orientation="horizontal">
+
+            <ImageButton
+
+                android:id="@+id/btnselectImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:layout_marginEnd="3dp"
+                android:background="@drawable/circle_white"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:padding="6dp"
+                android:layout_gravity="right|end"
+                android:scaleType="centerInside"
+                android:src="@drawable/camera_action_name" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_background"
+
+                >
+
+                <ImageButton
+
+                    android:id="@+id/captions_image"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                   android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="13dp"
+
+                    android:layout_gravity="left|bottom"
+                    android:clickable="true"
+                    android:src="@drawable/captions" />
+
+
+                <EditText
+                android:id="@+id/editWriteMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                android:scrollbarSize="6dp"
+                android:background="@android:color/transparent"
+                android:padding="12dp"
+                android:hint="Type a message "
+                    android:paddingRight="40dp"
+                    android:paddingEnd="40dp"
+                    android:paddingLeft="42dp"
+                    android:paddingStart="42dp"
+
+                android:maxLines="5"
+                android:textColor="@color/black"
+                android:textColorHint="@color/likeBtnGray"
+                android:textSize="18sp" />
+
+                <ImageButton
+
+                    android:id="@+id/atach"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="end|bottom"
+                   android:layout_marginBottom="13dp"
+                    android:layout_marginRight="13dp"
+                    android:clickable="true"
+                    android:src="@drawable/adddocuments" />
+            </FrameLayout>
+            <ImageButton
+                android:id="@+id/btnSend"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/circle_white"
+                android:clickable="true"
+                android:visibility="gone"
+                android:padding="10dp"
+                android:layout_marginLeft="3dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/send_button_action_name"
+                 />
+
+            <ImageButton
+                android:id="@+id/btnrecord"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:clickable="true"
+                android:layout_gravity="right|bottom"
+                android:background="@drawable/circle_white"
+
+                android:foregroundGravity="bottom"
+                android:padding="10dp"
+                android:layout_marginLeft="3dp"
+
+                android:scaleType="centerInside"
+                android:src="@drawable/record_button" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/likelove"
+                android:id="@+id/kooimage"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
+

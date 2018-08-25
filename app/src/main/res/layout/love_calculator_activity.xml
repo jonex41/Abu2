@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="3dp"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarlove"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        app:title="Love calculator"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent2"
+        android:orientation="vertical"
+       >
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/inlove"
+                android:textColor="@color/screendisp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"/>
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/love_image"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/girl"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/girl_edt"
+            android:layout_width="match_parent"
+            android:gravity="center"
+
+            android:hint="@string/girl"
+
+            android:padding="8dp"
+            android:textSize="14dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rectangular_layout2"
+            android:layout_height="40dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/and"
+
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:textSize="30sp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/boy"
+
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="14sp"/>
+            <EditText
+                android:id="@+id/boy_edt"
+                android:layout_width="match_parent"
+                android:padding="8dp"
+                android:hint="@string/boy"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rectangular_layout2"
+                android:layout_height="40dp" />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+            <Button
+                android:id="@+id/btn_calculate_love"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+         android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/rectangular_red"
+                android:text="Calculate the love between us"
+                />
+</RelativeLayout>
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

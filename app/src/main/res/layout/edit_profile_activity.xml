@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/nuno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold|italic"
+            android:textColor="@color/colorAccent"
+            android:text="Things i like to do"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp"/>
+
+
+        <TextView
+            android:id="@+id/whatilikemosthead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="42dp"
+            android:textStyle="bold"
+            android:layout_below="@id/nuno"
+            android:text="Favorite hobbies :"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/whatilikemostreal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="120"
+            android:hint="I like playing football"
+            android:layout_below="@id/whatilikemosthead"
+            android:textSize="14sp"/>
+        <ImageButton
+            android:id="@+id/r1"
+           android:layout_below="@id/whatilikemostreal"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/upload_image"/>
+
+        <TextView
+            android:id="@+id/relationshiphead"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/r1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="34dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:text="Relationship status:"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/relationshipreal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="120"
+            android:hint="Complicated"
+            android:layout_below="@id/relationshiphead"
+            android:textSize="14sp"/>
+        <ImageButton
+            android:id="@+id/r2"
+            android:layout_below="@id/relationshipreal"
+            android:layout_width="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="30dp"
+            android:src="@drawable/upload_image"/>
+
+        <TextView
+            android:id="@+id/foodhead"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/r2"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="98dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:text="Best food :"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/foodreal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pounded yam with egusi"
+            android:maxLength="120"
+            android:layout_below="@id/foodhead"
+            android:textSize="14sp"/>
+        <ImageButton
+            android:id="@+id/r3"
+            android:layout_below="@id/foodreal"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/upload_image"/>
+
+        <TextView
+            android:id="@+id/maleorfemalehead"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_below="@id/r3"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="20dp"
+            android:text="What i like in man/woman :"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/maleorfemalereal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="120"
+            android:hint="Tall and handSome"
+            android:layout_below="@id/maleorfemalehead"
+            android:textSize="14sp"/>
+
+        <ImageButton
+            android:id="@+id/r4"
+            android:layout_below="@id/maleorfemalereal"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/upload_image"/>
+        <TextView
+            android:id="@+id/nastylovehead"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/r4"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:text="I love doing,but it nasty :"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/nastylovereal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="picking my nose"
+            android:maxLength="120"
+            android:layout_below="@id/nastylovehead"
+            android:textSize="14sp"/>
+
+        <ImageButton
+            android:id="@+id/r5"
+            android:layout_below="@id/nastylovereal"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/upload_image"/>
+        <TextView
+            android:id="@+id/whoknowshead"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/r5"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:text="Who knows you the best :"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/whoknowsreal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="john Aguda"
+            android:maxLength="120"
+            android:layout_below="@id/whoknowshead"
+            android:textSize="14sp"/>
+        <ImageButton
+            android:id="@+id/r6"
+            android:layout_below="@id/whoknowsreal"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/upload_image"/>
+
+        <TextView
+            android:id="@+id/moneyhead"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/r6"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="20dp"
+            android:text="Unlimited love or money :"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/moneyreal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="both"
+            android:maxLength="40"
+            android:layout_below="@id/moneyhead"
+            android:textSize="14sp"/>
+        <ImageButton
+            android:id="@+id/r7"
+            android:layout_below="@id/moneyreal"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/upload_image"/>
+
+        <TextView
+            android:id="@+id/apologizehead"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/r7"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="20dp"
+            android:text="Apologizes or permission:"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/apologizereal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="permission"
+            android:maxLength="60"
+            android:layout_below="@id/apologizehead"
+            android:textSize="14sp"/>
+
+        <ImageButton
+            android:id="@+id/r8"
+            android:layout_below="@id/apologizereal"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/upload_image"/>
+        <TextView
+            android:id="@+id/musichead"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/r8"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dp"
+            android:textStyle="bold"
+            android:layout_marginEnd="18dp"
+            android:layout_marginTop="20dp"
+            android:text="Type of music"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/musicreal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="permission"
+            android:maxLength="40"
+            android:layout_below="@id/musichead"
+            android:textSize="14sp"/>
+        <ImageButton
+            android:id="@+id/r9"
+            android:layout_below="@id/musicreal"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/upload_image"/>
+
+        <TextView
+            android:id="@+id/celebrityhead"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/r9"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:text="Most loved celebrity :"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/celebrityreal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="120"
+            android:hint="permission"
+            android:layout_below="@id/celebrityhead"
+            android:textSize="14sp"/>
+
+        <ImageButton
+            android:id="@+id/r10"
+            android:layout_below="@id/celebrityreal"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/upload_image"/>
+
+        <TextView
+            android:id="@+id/habbithead"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/r10"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="100dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:text="Worst habbit :"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/habbitreal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="nil"
+            android:maxLength="120"
+            android:layout_below="@id/habbithead"
+            android:textSize="14sp"/>
+
+        <ImageButton
+            android:id="@+id/r11"
+            android:layout_below="@id/habbitreal"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/upload_image"/>
+        <TextView
+            android:id="@+id/sporthead"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/r11"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:text="Favorite sport :"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/sportreal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="50"
+            android:hint="Football"
+            android:layout_below="@id/sporthead"
+            android:textSize="14sp"/>
+
+        <ImageButton
+            android:id="@+id/r12"
+            android:layout_below="@id/sportreal"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/upload_image"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/white"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/oop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/colorAccent"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold|italic"
+            android:text="Things i hate to do"/>
+
+        <TextView
+            android:id="@+id/tasktodo"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/oop"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:text="Chores i hate to do :"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/tasktodoreal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="washing"
+            android:layout_below="@id/tasktodo"
+            android:textSize="14sp"/>
+        <ImageButton
+            android:id="@+id/r13"
+            android:layout_below="@id/tasktodoreal"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/upload_image"/>
+        <TextView
+            android:id="@+id/hateinopposte"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/r13"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:text="Things i hate in opposite sex :"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/hateinoppostereal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="talking"
+            android:maxLength="50"
+            android:layout_below="@id/hateinopposte"
+            android:textSize="14sp"/>
+        <ImageButton
+            android:id="@+id/r14"
+            android:layout_below="@id/hateinoppostereal"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/upload_image"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/uuop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:text="Things am doing to achieve my goal"
+            android:textStyle="bold|italic"/>
+
+        <EditText
+            android:id="@+id/things_havebeen_doing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uuop"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:maxLength="150"
+            android:layout_marginBottom="30dp"
+            android:hint="I have been playing games and eating, but i know it bad sha"
+            android:textStyle="bold|italic"/>
+        <ImageButton
+            android:id="@+id/r15"
+            android:layout_below="@id/things_havebeen_doing"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/upload_image"/>
+
+
+    </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/update_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update all"/>
+</LinearLayout>
+</ScrollView>

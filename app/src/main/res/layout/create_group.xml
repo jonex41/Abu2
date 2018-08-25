@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/group_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary" />
+
+
+
+<LinearLayout
+    android:layout_below="@+id/group_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical">
+
+<!--    <TextView
+
+        android:layout_width="wrap_content"
+        android:id="@+id/text_group"
+        android:layout_marginTop="5dp"
+        android:textSize="14dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black2"
+
+        android:layout_centerHorizontal="true"
+        android:text="@string/noteforgroup"/>-->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/lout"
+
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:id="@+id/circleImage_group"
+
+            android:layout_height="50dp"
+            android:src="@drawable/facebook_avatar"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/register_layout_name"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/name_of_groups"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_namegroup"
+                android:inputType="text"
+                android:maxLines="1"
+                android:focusable="auto"
+                android:paddingLeft="10dp"
+                android:textColorHint="@color/black2"
+                android:textColor="@color/black" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@color/black"
+        android:id="@+id/select_members"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/add_member"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/memberselcted"
+        android:layout_gravity="center"
+        android:textSize="14sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/countmember"
+        android:layout_gravity="center"
+
+        android:textSize="10sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lout"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/groupcreate_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:clipChildren="true"
+            android:layout_marginTop="5dp"
+
+           >
+
+        </android.support.v7.widget.RecyclerView>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+    <Button
+        android:id="@+id/createGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+       android:layout_alignParentBottom="true"
+        android:background="@drawable/edittext_background"
+        android:text="@string/create_group"/>
+</RelativeLayout>

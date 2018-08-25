@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarsellerprof"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Seller profile"
+        android:background="@color/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    <LinearLayout
+        android:id="@+id/ou"
+        android:layout_below="@id/toolbarsellerprof"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:src="@drawable/facebook_avatar"
+            android:id="@+id/sellerimage"
+            android:layout_height="60dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/sellername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+            android:textSize="16dp"
+           android:layout_marginTop="5dp"
+            android:text="Seller name"/>
+        <TextView
+            android:id="@+id/sellerdepartment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Department  name"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+      android:layout_below="@+id/ou"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/sellerrecyclerview">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/gll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"
+        android:background="@color/screendisp"
+        android:layout_alignParentBottom="true"
+
+        android:orientation="horizontal">
+
+        <ImageButton
+
+            android:id="@+id/btnselectImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:layout_marginEnd="3dp"
+            android:background="@drawable/circle_white"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:padding="6dp"
+            android:layout_gravity="right|end"
+            android:scaleType="centerInside"
+            android:src="@drawable/camera_action_name" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_background"
+
+            >
+
+            <ImageButton
+
+                android:id="@+id/captions_image"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="13dp"
+
+                android:layout_gravity="left|bottom"
+                android:clickable="true"
+                android:src="@drawable/captions" />
+
+
+            <EditText
+                android:id="@+id/editWriteMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                android:scrollbarSize="6dp"
+                android:background="@android:color/transparent"
+                android:padding="12dp"
+                android:hint="Type a message "
+                android:paddingRight="40dp"
+                android:paddingEnd="40dp"
+                android:paddingLeft="42dp"
+                android:paddingStart="42dp"
+                android:imeOptions="actionSend"
+                android:maxLines="5"
+                android:textColor="@color/black"
+                android:textColorHint="@color/white"
+                android:textSize="18sp" />
+
+            <ImageButton
+
+                android:id="@+id/atach"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="end|bottom"
+                android:layout_marginBottom="13dp"
+                android:layout_marginRight="13dp"
+                android:clickable="true"
+                android:src="@drawable/adddocuments" />
+        </FrameLayout>
+        <ImageButton
+            android:id="@+id/btnSend"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/circle_white"
+            android:clickable="true"
+            android:onClick="sendMessages"
+            android:visibility="gone"
+            android:padding="10dp"
+            android:layout_marginLeft="3dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/send_button_action_name"
+            />
+
+        <ImageButton
+            android:id="@+id/btnrecord"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:layout_gravity="right|bottom"
+            android:background="@drawable/circle_white"
+
+            android:foregroundGravity="bottom"
+            android:padding="10dp"
+            android:layout_marginLeft="3dp"
+
+            android:scaleType="centerInside"
+            android:src="@drawable/record_button" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:src="@drawable/likelove"
+            android:id="@+id/kooimage"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

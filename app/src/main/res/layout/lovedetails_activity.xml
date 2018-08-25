@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent2"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarlove"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        app:title="Love result"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextColor="@color/white" />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Boy"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:textSize="30dp"
+            android:id="@+id/boyid"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/and"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/girlid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/girl2"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="right"
+            android:textColor="@color/white"
+            android:layout_marginRight="20dp"
+            android:textSize="30sp"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+
+                android:background="@android:color/holo_red_dark"/>
+        <TextView
+            android:id="@+id/percenttxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/perce"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/white"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/resultid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="una no match abeg"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+
+            android:layout_marginRight="5dp"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/exitlovedetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:text="Exit"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rectangular_red"/>
+
+    </LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

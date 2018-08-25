@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/mediaautodownlod">
+
+
+
+            <MultiSelectListPreference
+            android:title="@string/wifiusage"
+            android:dialogTitle="@string/wifiusage"
+            android:entries="@array/entries_media"
+            android:entryValues="@array/entries_media"
+            android:key="wifiusage_key"
+                android:defaultValue="@string/wifiusage"
+            android:summary="%s"/>
+
+
+
+        <MultiSelectListPreference
+            android:title="@string/mobileusage"
+            android:dialogTitle="@string/mobileusage"
+            android:entries="@array/entries_media"
+            android:entryValues="@array/entries_media"
+            android:key="mobileusage_key"
+            android:defaultValue="@string/mobileusage"
+            android:summary="%s"/>
+    </PreferenceCategory>
+
+    <CheckBoxPreference
+        android:key="@string/display_mediain_gallary"
+        android:summary="@string/displaymediasummary"
+        android:defaultValue="true"
+        android:title="Checkbox Preference" />
+
+
+</PreferenceScreen>

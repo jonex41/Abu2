@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/screendisp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lsyout"
+    android:layout_marginTop="150dp"
+    tool:showIn="@layout/search"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+     <TextView
+         android:id="@+id/nameheader"
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:text="@string/name"
+         android:textColor="@color/colorAccent"
+         android:layout_centerHorizontal="true"
+         android:layout_marginBottom="3dp"/>
+
+        <TextView
+            android:layout_below="@+id/nameheader"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/name1"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/namer"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/genderheader"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/gender"
+            android:layout_below="@id/namer"
+            android:textColor="@color/colorAccent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="3dp"/>
+
+        <TextView
+            android:layout_below="@id/genderheader"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/y"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/gender"
+
+            android:layout_marginBottom="5dp"/>
+
+
+        <TextView
+            android:id="@+id/relationshipheader"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/relationship"
+            android:layout_below="@id/gender"
+            android:textColor="@color/colorAccent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="3dp"/>
+
+        <TextView
+            android:layout_below="@id/relationshipheader"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/y"
+            android:textColor="@color/colorAccent"
+
+            android:layout_marginBottom="5dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

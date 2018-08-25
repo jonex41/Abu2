@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <CheckBoxPreference
+        android:key="conversertion_key"
+        android:summary="@string/playsongincomingoutgoing"
+        android:title="@string/conversertiontone" />
+
+
+
+    <PreferenceCategory android:title="@string/messagenotification">
+        <RingtonePreference
+            android:key="ringtone"
+            android:showDefault="true"
+            android:showSilent="true"
+            android:ringtoneType="all"
+        android:summary="Pick a ringtone you like"
+            android:title="Ringtone Preference" />
+
+        <ListPreference
+            android:title="@string/vibratetitle"
+            android:dialogTitle="@string/vibratetitle"
+            android:entries="@array/vibrate_array"
+            android:entryValues="@array/vibrate_array"
+            android:key="vibrate_key"
+            android:summary="%s"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/callnotification">
+        <RingtonePreference
+            android:key="ringtone"
+            android:showDefault="true"
+            android:showSilent="true"
+            android:ringtoneType="all"
+            android:summary="Pick a ringtone you like"
+            android:title="Ringtone Preference" />
+
+        <ListPreference
+            android:title="@string/vibratetitle"
+            android:dialogTitle="@string/vibratetitle"
+            android:entries="@array/vibrate_array"
+            android:entryValues="@array/vibrate_array"
+            android:key="vibrate_key"
+            android:defaultValue="Default"
+            android:summary="%s"/>
+    </PreferenceCategory>
+
+
+    <Preference android:title="@string/resetbuttons"
+        android:key="resetbutton"
+        android:summary="@string/resetsummary"/>
+</PreferenceScreen>

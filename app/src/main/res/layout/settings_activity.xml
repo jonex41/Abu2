@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarsettings"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/black"
+        app:titleTextColor="@color/white"
+        app:subtitleTextColor="@color/white"
+        android:alpha="0.9"
+        app:title="Settings"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/liprofile"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:baselineAligned="false"
+        android:alpha="0.9"
+        android:orientation="vertical"
+        android:background="@color/black">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/myimage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+           android:layout_marginTop="30dp"
+
+       android:layout_gravity="center"
+            android:src="@drawable/facebook_avatar" />
+        <TextView
+            android:id="@+id/myname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name of User"
+
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/mystatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="this is my status do you have anything to say about that...."
+
+          android:maxLines="2"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="20dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Account"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:textColor="@color/black"
+        android:id="@+id/accountofsettings"
+        android:drawablePadding="20dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/keyaccount"/>
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:clickable="true"
+        android:background="@color/black2"
+        android:layout_marginBottom="10dp"
+        android:layout_height="0.5dp"/>
+    <TextView
+        android:id="@+id/chatssettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chats"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:drawablePadding="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/chatimage"/>
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/black2"
+        android:layout_marginBottom="10dp"
+        android:layout_height="0.5dp"/>
+    <TextView
+        android:id="@+id/notificationsettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notification"
+        android:textSize="16sp"
+        android:drawablePadding="20dp"
+        android:clickable="true"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/notififationimage"/>
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/black2"
+        android:layout_marginBottom="10dp"
+        android:layout_height="0.5dp"/>
+    <TextView
+        android:id="@+id/dataandstoragesettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data and storage usage"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:clickable="true"
+        android:drawablePadding="20dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/dataimage"/>
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/black2"
+        android:layout_marginBottom="10dp"
+        android:layout_height="0.5dp"/>
+    <TextView
+        android:id="@+id/invitesettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Invite a friend"
+        android:textSize="16sp"
+        android:drawablePadding="20dp"
+        android:clickable="true"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/inviteimage"/>
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/black2"
+        android:layout_marginBottom="10dp"
+        android:layout_height="0.5dp"/>
+
+    <TextView
+        android:id="@+id/helpsettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Help"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:textColor="@color/black"
+        android:drawablePadding="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:drawableLeft="@drawable/helpimage"/>
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

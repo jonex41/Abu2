@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/coodinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/screendisp"
+    android:paddingBottom="8dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/please"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"/>
+
+
+
+
+
+
+    <EditText
+        android:id="@+id/editWriteMessage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_marginLeft="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/spinnerdrawable"
+        android:hint="@string/search"
+
+        android:gravity="center"
+        android:padding="15dp"
+        android:paddingBottom="7dp"
+        android:paddingEnd="20dp"
+        android:paddingLeft="20dp"
+        android:paddingStart="20dp"
+
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:layout_marginBottom="14dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/searchby"
+        android:id="@+id/ttr"
+        android:layout_marginBottom="5dp"
+        android:textSize="14dp"
+        android:layout_marginLeft="3dp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginRight="10dp"
+        />
+
+    <Spinner
+
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="3dp"
+        android:background="@drawable/spinnerdrawable" />
+
+
+<ImageButton
+    android:layout_marginTop="16dp"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:layout_gravity="center"
+  android:src="@drawable/search_stuffs"
+    android:id="@+id/sendmeoo"
+    android:background="@drawable/circle_stuffs"/>
+</LinearLayout>
+
+
+
+               <android.support.v7.widget.RecyclerView
+                   android:id="@+id/recyclerforsearch"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="5dp"
+                  >
+
+               </android.support.v7.widget.RecyclerView>
+</LinearLayout>
+       </ScrollView>
+
+</LinearLayout>

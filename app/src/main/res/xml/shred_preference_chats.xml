@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceCategory android:title="@string/chatsettings">
+    <CheckBoxPreference
+        android:key="@string/enterissend"
+        android:summary="@string/enterissendsummary"
+        android:title="Checkbox Preference" />
+
+    <ListPreference
+
+        android:dialogTitle="@string/fontsize"
+        android:entries="@array/entries_for_textsize"
+        android:entryValues="@array/entries_for_textsize_values"
+        android:key="listof_font"
+        android:summary="%s"
+        android:title="@string/fontsize" />
+    <!-- android:summary="@string/fontforchatscreen"-->
+    <Preference
+        android:summary="@string/selectwallpaper"
+        android:title="@string/setwallpaper">
+        <intent
+            android:action="com.john.www.abu.SETTING_START_ACTIVITY"
+            android:targetClass="com.john.www.abu.Activitiesss.SettingsAvtivity"
+            android:targetPackage="com.john.www.abu" />
+    </Preference>
+
+    <Preference
+        android:summary="@string/chatbackup"
+        android:title="@string/chatbackaptitle">
+        <intent
+            android:action="com.john.www.abu.SETTING_START_ACTIVITY"
+            android:targetClass="com.john.www.abu.Activitiesss.SettingsAvtivity"
+            android:targetPackage="com.john.www.abu" />
+    </Preference>
+
+    <Preference
+
+        android:title="@string/chathistory">
+        <intent
+            android:action="com.john.www.abu.SETTING_START_ACTIVITY"
+            android:targetClass="com.john.www.abu.Activitiesss.SettingsAvtivity"
+            android:targetPackage="com.john.www.abu" />
+    </Preference>
+</PreferenceCategory>
+
+</PreferenceScreen>
+
+<!--
+<Preference android:title="@string/prefs_web_page" >
+<intent android:action="android.intent.action.VIEW"
+    android:data="http://www.example.com" />
+</Preference>-->
+<!--
+<RingtonePreference
+android:key="ringtone"
+android:showDefault="true"
+android:showSilent="true"
+android:ringtoneType="all"
+android:summary="Pick a ringtone you like"
+android:title="Ringtone Preference" />
+<EditTextPreference
+android:dialogTitle="Enter a text"
+android:key="text"
+android:summary="Click to show a text entry dialog"
+android:title="EditText Preference" />-->
+
+
+<!--
+<SwitchPreference
+android:key="switch"
+android:title="Switch Preference"
+android:summary="Click to switch on or off"
+android:defaultValue="true"/>-->
+
+
+<!--<MultiSelectListPreference
+android:dialogTitle="Dialog title"
+android:entries="@array/settings_multi_select_list_preference_titles"
+android:entryValues="@array/settings_multi_select_list_preference_values"
+android:key="multi_select_list"
+android:title="Multiselect title" />-->
+
+<!--
+<Preference
+android:key="pref_static_field_key"
+android:selectable="false"
+android:persistent="false"
+android:title="you can omit the title"
+android:summary="Multi line description\ncan go here."/>-->

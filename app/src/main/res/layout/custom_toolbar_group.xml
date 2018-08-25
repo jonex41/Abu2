@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/newgroup"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/white"
+        android:id="@+id/tr"
+        android:textSize="18sp"
+        android:maxLength="14"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addmembers"
+        android:id="@+id/adder_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tr"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+
+         />
+
+    <ImageView
+        android:id="@+id/okmarker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/okmark"
+        android:layout_marginRight="16dp"
+        android:clickable="true"
+        android:visibility="gone"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

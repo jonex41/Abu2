@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/justpicturetoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/black"
+        app:titleTextColor="@color/white"
+        />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/facebook_avatar"
+        android:id="@+id/justimagestuff"/>
+
+    <Button
+        android:id="@+id/buttontoprofile"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/profile"
+    android:layout_gravity="bottom|center"
+    android:layout_marginBottom="10dp"
+    android:textColor="@color/white"
+    android:background="@drawable/profilerectangular"/>
+</FrameLayout>

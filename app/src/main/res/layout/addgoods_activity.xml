@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:title="Add product"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="3dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:background="@color/screendisp"
+        android:padding="10dp"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+   <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/likeBtnGray"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/picture_for_picture"/>
+
+
+    <ImageView
+        android:id="@+id/imageview_for_post"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/post_placeholder"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/likeBtnGray"
+        android:textSize="16sp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/namewithdot"/>
+
+    <EditText
+        android:id="@+id/name_of_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textAutoComplete"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/just_rectangle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/likeBtnGray"
+        android:textSize="16sp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/price_perone"/>
+
+    <EditText
+        android:id="@+id/price_perone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/just_rectangle"/>
+
+   <TextView
+       android:id="@+id/mintxv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/likeBtnGray"
+        android:textSize="16sp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/minimum_for_hostel"/>
+
+    <EditText
+        android:id="@+id/minimumto_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxEms="3"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/just_rectangle"/>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/likeBtnGray"
+            android:textSize="16sp"
+            android:layout_marginBottom="5dp"
+            android:text="Description of your product :"/>
+
+        <EditText
+            android:id="@+id/descriptionofproduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textAutoComplete"
+            android:maxLength="100"
+            android:maxLines="6"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/just_rectangle"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center_vertical"
+            android:text="Product type:"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:id="@+id/radioGroupshop">
+
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food"
+
+                android:id="@+id/for_foodonly"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:checked="false"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clothing"
+                android:id="@+id/for_clothingsonly"
+                android:layout_gravity="center_vertical"
+                android:checked="false"
+
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_weight="1" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accessories"
+                android:id="@+id/for_accessoriessonly"
+                android:layout_gravity="center_vertical"
+                android:checked="false"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_weight="1" />
+
+        </RadioGroup>
+    
+    <Button
+        android:id="@+id/summit_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"
+        android:background="@drawable/edittext_background"
+            android:textSize="16sp"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/posts"/>
+    </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+</LinearLayout>

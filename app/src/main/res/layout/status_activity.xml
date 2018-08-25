@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitiesss.StatusActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarstatus"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:inputType="textAutoComplete"
+
+       android:maxLength="120"
+        android:maxLines="2"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/etstatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/mystatus"
+        android:inputType="textAutoComplete"
+        android:maxLength="120"
+        android:maxLines="2"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/btchangeprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/change_status"
+        android:layout_marginBottom="40dp"
+        android:background="@color/colorAccent"
+        android:padding="10dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/colorAccent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp">
+
+
+
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

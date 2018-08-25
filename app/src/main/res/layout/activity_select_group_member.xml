@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.john.www.abu.Activitiesss.SelectedMemberOfGroup">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_group_member"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+<LinearLayout
+    android:layout_below="@id/toolbar_group_member"
+    android:id="@+id/selectedmemberlinear"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:visibility="gone"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/selected_member"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/toolbar_group_member"
+        android:layout_height="wrap_content"/>
+
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:id="@+id/view"
+        android:layout_below="@id/selected_member"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/selectedmemberlinear"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/select_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="match_parent"/>
+
+    </LinearLayout>
+</RelativeLayout>

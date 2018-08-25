@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="typeof_search">
+
+        <item>Registration number</item>
+        <item>Username</item>
+        <item>Name</item>
+        <item>Department</item>
+        <item>Gender</item>
+
+    </string-array>
+
+    <string-array name="typeof_search2">
+
+        <item>Registration number</item>
+        <item>Username</item>
+        <item>Department</item>
+
+
+    </string-array>
+
+
+    <string-array name="entries_for_textsize">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+
+    </string-array>
+    <string-array name="entries_for_textsize_values">
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+
+    </string-array>
+
+
+    <string-array name="vibrate_array">
+        <item>Off</item>
+        <item>Long</item>
+        <item>Short</item>
+        <item>Default</item>
+
+    </string-array>
+
+    <string-array name="entries_media">
+        <item>Photos</item>
+        <item>Audio</item>
+        <item>Videos</item>
+        <item>Documents</item>
+
+    </string-array>
+
+
+</resources>

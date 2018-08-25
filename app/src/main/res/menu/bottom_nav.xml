@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/chatbotnav"
+        android:title="@string/chatbotnav"
+        android:icon="@drawable/chat_botnavactionicon" />
+
+    <item
+        android:id="@+id/postsbotnav"
+        android:icon="@drawable/postction_name"
+        android:title="@string/postsbotnav"/>
+
+    <item
+        android:id="@+id/abugistbotnav"
+        android:icon="@drawable/appmenu_action_name"
+        android:title="@string/action_settings"/>
+    <item
+        android:id="@+id/faceofabubotnav"
+        android:icon="@drawable/staraction_name"
+        android:title="@string/abu" />
+
+
+     />
+    <item
+        android:id="@+id/utilitiesbotnav"
+        android:icon="@drawable/utilitiaction_name"
+        android:title="@string/shoopings"
+        />
+
+</menu>

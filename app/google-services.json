@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "519401196436",
+    "firebase_url": "https://abuzaria-b047a.firebaseio.com",
+    "project_id": "abuzaria-b047a",
+    "storage_bucket": "abuzaria-b047a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:519401196436:android:709202d3bd8e644b",
+        "android_client_info": {
+          "package_name": "com.john.www.abu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "519401196436-f307ggnnj64n4n8fh8ggncs37g88v5lf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.john.www.abu",
+            "certificate_hash": "68db23baee79472c630a5eb9e2ebadf7365efac5"
+          }
+        },
+        {
+          "client_id": "519401196436-bjprlt5r1ipggp2pkmgjej6u326gkdj0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7pC_CUDwLHeCXkBPS2FnUee4QlgYXPgA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "519401196436-bjprlt5r1ipggp2pkmgjej6u326gkdj0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

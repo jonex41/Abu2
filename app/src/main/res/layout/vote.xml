@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        app:tabIndicatorColor="@color/transparent2"
+        android:fitsSystemWindows="true"
+        app:tabGravity="fill"
+        app:tabTextColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+    </android.support.design.widget.TabLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+      android:padding="10dp"
+        android:id="@+id/phases_completed"
+        android:textColor="@color/white"
+        android:text="This is the first phase of selection"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contest"
+        android:id="@+id/btn_contesttant"
+        android:background="@drawable/rectangle_layout"
+        android:layout_gravity="right"/>
+</LinearLayout>
+    <android.support.v4.view.ViewPager
+
+        android:id="@+id/viewpager"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/viewme"
+        >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>
